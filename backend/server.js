@@ -12,7 +12,8 @@ const startServer = async () => {
         
         // Middleware
         app.use(cors({
-            origin: 'http://localhost:3000',
+            origin: ["http://deploy-mern-1whq.vercel.app"],
+            method: ["POST", "GET"]
             credentials: true
         }));
         app.use(express.json());
